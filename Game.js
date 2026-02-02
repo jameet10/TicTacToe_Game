@@ -25,11 +25,11 @@ function Game(temp)
    m[i].appendChild(box[k][l]);
   if(m[i].dataset.order%2==0)
   {
-   box[k][l].src="circle.jpeg";
+   box[k][l].src="Required_Items/circle.jpeg";
    box[k][l].dataset.value="O";
   }
   else{
-   box[k][l].src="cross.jpeg";
+   box[k][l].src="Required_Items/cross.jpeg";
    box[k][l].dataset.value='X';
   }
   //Winning
