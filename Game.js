@@ -33,12 +33,12 @@ function Game(temp)
    box[k][l].dataset.value='X';
   }
   //Winning
- //Diagonal Win
+  //Diagonal Win
     if(l==k)
     {
     countz=updatez(l,k,countz);
     countx=updatex(l,k,countx);
-  }
+    }
     //Reverse Diagonal Win
     if(k==3-l-1)
     {
@@ -51,7 +51,6 @@ function Game(temp)
     // Straight Row Win
         srcountz[k]=updatez(l,k,srcountz[k]);
         srcountx[k]=updatex(l,k,srcountx[k]);
-     
    if(countz==3||rcountz==3||sccountz[l]==3||srcountz[k]==3)
    { 
      setTimeout(win,450,"O");
@@ -127,4 +126,5 @@ outer.classList.remove("overlay");
 NewGame.classList.remove("showButton");
 won.classList.remove("showBox");
 Restartfn();
-});}
+}
+);}
